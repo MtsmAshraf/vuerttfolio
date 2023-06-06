@@ -126,11 +126,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
                         console.log("arabic",this.arabic)
                         this.$emit("changelanguagetoenglish", this.english);
                         this.$emit("changelanguagetoarabic", this.arabic);
+                    }, 2000);
+                    setTimeout(() => {
                         document.querySelectorAll(".year .year-detail").forEach((detail) => {
                             detail.style.opacity = "0"
                             detail.style.display = "none"
+                            console.log("details should be NOT displayed")
                         })
-                    }, 2000);
+                    }, 2200);
             },
             changeLanguageToEnglish(){
                     setTimeout(() => {
@@ -152,11 +155,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
                         console.log("arabic",this.arabic)
                         this.$emit("changelanguagetoenglish", this.english);
                         this.$emit("changelanguagetoarabic", this.arabic);
+                    }, 2000);
+                    setTimeout(() => {
                         document.querySelectorAll(".year .year-detail").forEach((detail) => {
                             detail.style.opacity = "0"
                             detail.style.display = "none"
+                            console.log("details should be NOT displayed")
                         })
-                    }, 2000);
+                    }, 2200);
             },
             loader(){
                 document.querySelector(".loader").classList.add("animation")
